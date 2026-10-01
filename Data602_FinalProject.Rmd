@@ -1,5 +1,6 @@
 ---
-title: "A Statistical Analysis of Vehicle Age and Fleet Roadworthiness in Ontario"
+title: "Two-proportion inference and linear prediction using a documented random sample of neonatal hospital
+records"
 author: 
   - "Group Members:"
   - "Ikenna Ezike"
