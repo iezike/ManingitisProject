@@ -1,0 +1,61 @@
+---
+title: "A Statistical Analysis of Vehicle Age and Fleet Roadworthiness in Ontario"
+author: 
+  - "Group Members:"
+  - "Ikenna Ezike"
+  - "Milly Tesfazgy"
+  - "Million Seghid"
+date: "2026-09-25"
+output: pdf_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\
+
+```{r}
+library(haven)
+my_data <- read_sav("C:/Users/Ikemma/Downloads/new data 11111111.sav")
+
+# Preterm: gestational age < 37 AND outcome = 2
+preTerm <- my_data[
+  my_data$`@5.Gestationalageofneonateweek` < 37 &
+    my_data$outcome == 2,
+]
+
+# Term: gestational age >= 37 AND outcome = 2
+postTerm <- my_data[
+  my_data$`@5.Gestationalageofneonateweek` >= 37 &
+    my_data$outcome == 2,
+]
+
+# All observations with outcome = 2
+poorTreatment <- my_data[
+  my_data$outcome == 2,
+]
+
+
+preTerm_number = nrow(postTerm)
+postTerm_number = nrow(preTerm)
+poorTreatmentToal = nrow(poorTreatment)
+
+#Pre term proportion p1
+preTerm_number / poorTreatmentToal
+
+#Post term proportion p2
+postTerm_number / poorTreatmentToal
+
+
+
+```
+
+\
+
+\
+
+$$$$
