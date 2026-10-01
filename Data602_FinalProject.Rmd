@@ -15,9 +15,28 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
-\
+##### Introduction
+
+Purpose and guiding questions
+We will study neonates diagnosed with meningitis and admitted to the
+neonatal intensive care units at Hiwot Fana
+Comprehensive Specialized University Hospital and Jugal General Hospital
+in Harar, Ethiopia, from 1 October 2020
+through 31 October 2024. The finite target population is the eligible
+admission records in those two hospitals
+during that interval, not all babies in Ethiopia or future admissions
+[1]. The complete hospital registry is not
+supplied; the public file contains a sample of records [1, 2].
+Inference: Among that population, is the proportion with a Poor
+prognosis higher in the original Gestational age
+category \<37 weeks than in the category \>=37 weeks? Prediction: Among
+comparable eligible neonates, how well
+does the original Gestational age of neonate (week) predict Birth weight
+of neonates (gram)? The questions use the
+same sampled records but distinct response variables.
 
 ```{r}
 library(haven)
@@ -59,4 +78,4 @@ postTerm_number / poorTreatmentToal
 
 \
 
-$$$$
+\$\$\$\$
